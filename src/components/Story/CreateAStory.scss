@@ -1,0 +1,14 @@
+.create-a-story {
+  position: relative;
+  width: 120px;
+  height: 200px;
+  margin: 10px 4px;
+
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+
+  & > img {
+    height: 60%;
+  }
+}

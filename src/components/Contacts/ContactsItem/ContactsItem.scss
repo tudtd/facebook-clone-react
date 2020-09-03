@@ -1,0 +1,16 @@
+.contacts-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f0f2f5;
+  }
+
+  & > span {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  padding: 0 10px;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+
+  &__left,
+  &__center,
+  &__right,
+  &__search,
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    justify-content: space-evenly;
+
+    & > img {
+      height: 40px;
+    }
+  }
+
+  &__search {
+    background-color: rgb(240, 242, 245);
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 30px;
+
+    & > .MuiSvgIcon-root {
+      color: gray;
+    }
+
+    & > input {
+      background-color: transparent;
+      border: none;
+      margin-left: 5px;
+      outline-width: 0;
+    }
+  }
+
+  &__options {
+    padding: 10px 40px;
+    margin: 0 5px;
+
+    & > .MuiSvgIcon-root {
+      color: gray;
+      font-size: xx-large;
+    }
+
+    &:hover {
+      padding: 10px 40px;
+      background-color: #f0f2f5;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    &--active {
+      border-bottom: 3px solid #1877f2;
+
+      &:hover {
+        background-color: #fff;
+        border-radius: 0px;
+      }
+    }
+  }
+
+  &__info {
+    padding: 5px 15px 5px 5px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    & > h4 {
+      margin-left: 5px;
+    }
+
+    &:hover {
+      background-color: #f0f2f5;
+
+      border: none;
+      border-radius: 30px;
+    }
+  }
+}

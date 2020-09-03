@@ -1,19 +1,22 @@
-import React from "react";
-import Header from "./components/Header";
-
-import "./App.css";
+import React from 'react';
+import './App.css';
+import Header from './components/Header/Header';
+import Sidebar from './components/Sidebar/Sidebar';
+import Feed from './components/Feed/Feed';
+import Contacts from './components/Contacts/Contacts';
 
 const App = () => {
-    return (
-        <div className='app'>
-            <Header />
+  return (
+    <div className="app">
+      <Header />
 
-            {/* App body  */}
-            {/* Sidebar */}
-            {/* Feed */}
-            {/* Contacts */}
-        </div>
-    );
+      <div className="app__body">
+        <Sidebar />
+        <Feed />
+        <Contacts />
+      </div>
+    </div>
+  );
 };
 
 export default App;
